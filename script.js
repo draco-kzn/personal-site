@@ -185,7 +185,7 @@ function renderProjects() {
 }
 
 function renderExperience() {
-  const root = document.getElementById("experience");
+  const root = document.getElementById("experience-panel");
   root.innerHTML = `
     <p class="eyebrow">Experience</p>
     <h3>实习经历</h3>
