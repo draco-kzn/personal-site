@@ -1,20 +1,20 @@
 :root {
-  --bg: #f6f8fb;
+  --bg: #f5f7fa;
   --paper: #ffffff;
-  --paper-soft: #fbfcfe;
+  --paper-soft: #f7fafc;
   --text: #051c2c;
-  --muted: #485869;
-  --muted-soft: #738395;
-  --line: #d7dfe7;
+  --muted: #425466;
+  --muted-soft: #6f8192;
+  --line: #d6dee6;
   --line-strong: #c4cfda;
   --brand: #2251ff;
   --brand-dark: #1737b8;
   --brand-soft: #eef3ff;
-  --highlight: #fff0a8;
-  --shadow: 0 12px 30px rgba(5, 28, 44, 0.06);
-  --radius-xl: 18px;
-  --radius-lg: 12px;
-  --radius-md: 8px;
+  --highlight: #dfe9ff;
+  --shadow: 0 10px 24px rgba(5, 28, 44, 0.05);
+  --radius-xl: 14px;
+  --radius-lg: 10px;
+  --radius-md: 6px;
 }
 
 * {
@@ -30,7 +30,7 @@ body {
   min-height: 100vh;
   color: var(--text);
   font-family: "Segoe UI", "PingFang SC", "Hiragino Sans GB", sans-serif;
-  background: linear-gradient(180deg, #f9fbfd 0%, #f3f6fa 100%);
+  background: linear-gradient(180deg, #f8fafc 0%, #f2f5f8 100%);
 }
 
 body::before {
@@ -58,6 +58,7 @@ body::before {
   border-radius: var(--radius-lg);
   background: var(--paper);
   box-shadow: var(--shadow);
+  border-left: 4px solid var(--brand);
 }
 
 .top-note p {
@@ -130,7 +131,7 @@ body::before {
 
 .hero-card {
   border-top: 6px solid var(--brand);
-  background: linear-gradient(180deg, #ffffff 0%, #fbfcfe 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fafcff 100%);
 }
 
 .eyebrow,
@@ -239,9 +240,10 @@ h2 {
 }
 
 mark {
-  padding: 0 0.22em;
+  padding: 0.02em 0.24em;
   background: var(--highlight);
   color: inherit;
+  border-radius: 3px;
 }
 
 .bullet-list {
@@ -251,16 +253,18 @@ mark {
 
 .bullet-list li {
   margin-bottom: 12px;
+  padding-left: 2px;
 }
 
 .bullet-list strong {
-  color: var(--text);
+  color: var(--brand-dark);
   margin-right: 0.25rem;
 }
 
 .quote-card {
   margin: 0 0 18px;
   border-left: 4px solid var(--brand);
+  border-top: 1px solid var(--line);
   background: var(--paper-soft);
   font-size: 1.06rem;
 }
@@ -277,6 +281,7 @@ mark {
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--paper-soft);
+  border-top: 3px solid #dce6f8;
 }
 
 .contact-item a {
@@ -307,6 +312,24 @@ mark {
   font-size: 0.8rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
+}
+
+.hero-card,
+.section-card,
+.quote-card,
+.top-note,
+.contact-item {
+  position: relative;
+}
+
+.hero-card::after,
+.section-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.7);
 }
 
 .reveal {
