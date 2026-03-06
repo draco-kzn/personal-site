@@ -5,7 +5,7 @@ const profile = {
   heroSubtitle:
     "如果你在找一个既能做 AI 行业研究、也能理解产品与商业化、还能把复杂信息压缩成决策材料的人，这个页面就是写给你的。",
   identity:
-    "我现在是对外经济贸易大学本科生，未来是 Fudan DDIM incoming。过去这段时间里，我分别在基金、投后、战略团队和 AI 产品实践里工作过。也正因为这些经历交叉在一起，我越来越明确自己想去的方向，不是泛泛的战略或商业分析，而是更聚焦的 AI 投资、AI 产品和 AI 战略。",
+    "我现在是对外经济贸易大学本科生，即将入读复旦大学管理学院 DDIM 项目。过去这段时间里，我分别在基金、投后、战略团队和 AI 产品实践里工作过。也正因为这些经历交叉在一起，我越来越明确自己想去的方向，不是泛泛的战略或商业分析，而是更聚焦的 AI 投资、AI 产品和 AI 战略。",
   valuesIntro:
     "我会被好的团队吸引，通常不是因为 title，而是因为它们同时重视 <mark>判断力</mark>、<mark>诚实沟通</mark> 和 <mark>长期主义</mark>。这也是我想加入 AI VC、互联网 AI 战略和咨询团队的原因。",
   values: [
@@ -71,7 +71,7 @@ const profile = {
   phone: "156-1600-4799",
   resumeUrl: "./resume.pdf",
   target: "AI VC / 互联网 AI 战略 / 咨询",
-  education: "对外经贸本科，Fudan DDIM incoming",
+  education: "对外经贸本科，即将入读复旦大学管理学院 DDIM 项目",
 };
 
 function setText(id, value) {
