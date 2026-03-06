@@ -10,7 +10,7 @@ const profile = {
     url: "./resume.pdf",
   },
   about:
-    "本科就读于对外经济贸易大学国际商学院市场营销专业，曾于法国 Kedge Business School 交换，并将于 2026 年进入复旦大学管理学院攻读国际管理双硕士。我的核心优势不在单一职能，而在于能够快速进入业务语境，抓住关键变量，搭建分析框架，并把结论沉淀成可直接用于沟通和决策的材料。",
+    "本科就读于对外经济贸易大学国际商学院市场营销专业，曾于法国 Kedge Business School 交换，并将于 2026 年进入复旦大学管理学院攻读国际管理双硕士。我的优势不在单一职能，而在于能够快速进入业务语境，抓住关键变量，搭建分析框架，并把结论沉淀成可直接用于沟通和决策的材料。",
   metrics: [
     { value: "4段", label: "核心实习经历" },
     { value: "70+", label: "会议纪要与研究输出" },
@@ -220,11 +220,7 @@ function init() {
   setLink("email-link", `mailto:${profile.email}`, "邮件联系");
   setLink("contact-email-link", `mailto:${profile.email}`, profile.email);
   setLink("resume-link", profile.resumeUrl, "查看简历");
-  setLink(
-    "contact-secondary-link",
-    profile.secondaryLink.url,
-    profile.secondaryLink.label
-  );
+  setLink("contact-secondary-link", profile.secondaryLink.url, profile.secondaryLink.label);
 
   renderMetrics();
   renderQuickFacts();
