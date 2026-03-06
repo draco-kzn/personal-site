@@ -11,6 +11,11 @@ const profile = {
   },
   about:
     "本科就读于对外经济贸易大学国际商学院市场营销专业，曾于法国 Kedge Business School 交换，并将于 2026 年进入复旦大学管理学院攻读国际管理双硕士。我的优势不在单一职能，而在于能够快速进入业务语境，抓住关键变量，搭建分析框架，并把结论沉淀成可直接用于沟通和决策的材料。",
+  thesis: [
+    "能快速进入新行业语境并完成结构化研究",
+    "兼具投资、战略、投后与 AI 应用的交叉视角",
+    "输出稳定，适合高密度信息环境下的分析工作",
+  ],
   metrics: [
     { value: "4段", label: "核心实习经历" },
     { value: "70+", label: "会议纪要与研究输出" },
@@ -130,6 +135,20 @@ function renderMetrics() {
     .join("");
 }
 
+function renderThesis() {
+  const root = document.getElementById("hero-thesis");
+  root.innerHTML = profile.thesis
+    .map(
+      (item, index) => `
+        <div class="thesis-item reveal reveal-delay-${index}">
+          <span class="thesis-index">0${index + 1}</span>
+          <p>${item}</p>
+        </div>
+      `
+    )
+    .join("");
+}
+
 function renderQuickFacts() {
   const root = document.getElementById("quick-facts");
   root.innerHTML = profile.quickFacts
@@ -156,7 +175,7 @@ function renderProjects() {
           <h3 class="project-title">${project.name}</h3>
           <p class="project-description">${project.description}</p>
           <div class="project-footer">
-            <span class="project-description">${project.outcome}</span>
+            <span class="project-outcome">${project.outcome}</span>
             <a class="project-link" href="${project.linkUrl}" target="_blank" rel="noreferrer">${project.linkText}</a>
           </div>
         </article>
@@ -197,7 +216,7 @@ function renderSkills() {
       ${profile.skillGroups
         .map(
           (group) => `
-            <section>
+            <section class="skill-group">
               <h4 class="skill-group-title">${group.title}</h4>
               <p class="skill-note">${group.note}</p>
               <div class="skill-tags">
@@ -223,6 +242,7 @@ function init() {
   setLink("contact-secondary-link", profile.secondaryLink.url, profile.secondaryLink.label);
 
   renderMetrics();
+  renderThesis();
   renderQuickFacts();
   renderProjects();
   renderExperience();
