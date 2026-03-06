@@ -1,26 +1,18 @@
 # personal-site
 
-一个可直接打开的静态个人网站，用来做实习投递展示页。
+Static personal website for internship applications.
 
-## 如何使用
+## Files
 
-1. 编辑 `script.js` 里的 `profile` 对象，把名字、邮箱、项目、技能改成你自己的。
-2. 双击打开 `index.html`，就能本地预览页面。
-3. 如果要部署到 GitHub Pages、Vercel 或 Netlify，直接上传整个 `personal-site` 文件夹即可。
+- `index.html`: page structure
+- `styles.css`: page styling
+- `script.js`: profile content and rendering logic
+- `resume.pdf`: attached resume for download
 
-## 建议优先修改的字段
+## Local preview
 
-- `name`
-- `title`
-- `email`
-- `resumeUrl`
-- `githubUrl`
-- `projects`
-- `experience`
-- `skillGroups`
+Open `index.html` directly in a browser.
 
-## 结构
+## Deployment
 
-- `index.html`: 页面结构
-- `styles.css`: 页面样式
-- `script.js`: 个人信息与动态渲染逻辑
+This repository is intended for GitHub Pages deployment.
