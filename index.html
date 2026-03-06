@@ -12,94 +12,108 @@
   </head>
   <body>
     <main class="page-shell">
-      <section class="intro-strip">
-        <p id="opening-line"></p>
-      </section>
+      <div class="page-layout">
+        <aside class="side-rail">
+          <a href="#intro" class="rail-link"><span>01</span><small>Intro</small></a>
+          <a href="#values" class="rail-link"><span>02</span><small>Values</small></a>
+          <a href="#results" class="rail-link"><span>03</span><small>Work</small></a>
+          <a href="#fit" class="rail-link"><span>04</span><small>Fit</small></a>
+          <a href="#closing" class="rail-link"><span>05</span><small>End</small></a>
+        </aside>
 
-      <section class="hero-visual" aria-hidden="true">
-        <div class="hero-ridge ridge-back"></div>
-        <div class="hero-ridge ridge-mid"></div>
-        <div class="hero-ridge ridge-front"></div>
-        <div class="hero-glow"></div>
-      </section>
+        <div class="page-content">
+          <section class="intro-strip" id="intro">
+            <p id="opening-line"></p>
+          </section>
 
-      <section class="hero-card">
-        <p class="eyebrow">Concise Cover Letter</p>
-        <h1 id="hero-title"></h1>
-        <p id="hero-subtitle" class="hero-subtitle"></p>
-        <p id="identity-text" class="identity-text"></p>
-      </section>
+          <section class="hero-visual" aria-hidden="true">
+            <div class="city-panel city-rome">
+              <span class="city-label">Rome</span>
+            </div>
+            <div class="city-panel city-shanghai">
+              <span class="city-label">Shanghai</span>
+            </div>
+          </section>
 
-      <section class="value-box">
-        <p id="values-intro" class="value-intro"></p>
-        <ul id="values-list" class="bullet-list compact"></ul>
-      </section>
+          <section class="hero-card">
+            <p class="eyebrow">Concise Cover Letter</p>
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle" class="hero-subtitle"></p>
+            <p id="identity-text" class="identity-text"></p>
+          </section>
 
-      <section class="transition-copy">
-        <p id="results-intro"></p>
-      </section>
+          <section class="value-box" id="values">
+            <p id="values-intro" class="value-intro"></p>
+            <ul id="values-list" class="bullet-list compact"></ul>
+          </section>
 
-      <section class="two-column-grid">
-        <article class="column-card">
-          <div class="section-head">
-            <span class="section-icon">💼</span>
-            <h2>全职相关成果产出 <span class="en-label">Results-Oriented</span></h2>
-          </div>
-          <ul id="results-list" class="bullet-list"></ul>
-        </article>
+          <section class="transition-copy" id="results">
+            <p id="results-intro"></p>
+          </section>
 
-        <article class="column-card">
-          <div class="section-head">
-            <span class="section-icon">🧠</span>
-            <h2>能力特质 <span class="en-label">Character &amp; Fit</span></h2>
-          </div>
-          <p id="fit-intro" class="section-intro"></p>
-          <ul id="fit-list" class="bullet-list"></ul>
-        </article>
-      </section>
+          <section class="two-column-grid">
+            <article class="column-card">
+              <div class="section-head">
+                <span class="section-icon">💼</span>
+                <h2>全职相关成果产出 <span class="en-label">Results-Oriented</span></h2>
+              </div>
+              <ul id="results-list" class="bullet-list"></ul>
+            </article>
 
-      <blockquote id="quote-block" class="quote-card"></blockquote>
+            <article class="column-card" id="fit">
+              <div class="section-head">
+                <span class="section-icon">🧠</span>
+                <h2>能力特质 <span class="en-label">Character &amp; Fit</span></h2>
+              </div>
+              <p id="fit-intro" class="section-intro"></p>
+              <ul id="fit-list" class="bullet-list"></ul>
+            </article>
+          </section>
 
-      <section class="closing-copy">
-        <p id="closing-text"></p>
-      </section>
+          <blockquote id="quote-block" class="quote-card"></blockquote>
 
-      <section class="contact-card">
-        <div class="contact-head">
-          <p class="eyebrow">Closing</p>
-          <h2>随信附上我的简历，期待有机会进一步交流</h2>
+          <section class="closing-copy">
+            <p id="closing-text"></p>
+          </section>
+
+          <section class="contact-card" id="closing">
+            <div class="contact-head">
+              <p class="eyebrow">Closing</p>
+              <h2>随信附上我的简历，期待有机会进一步交流</h2>
+            </div>
+
+            <div class="resume-panel">
+              <a id="resume-inline-link" href="#" target="_blank" rel="noreferrer">查看 PDF 简历</a>
+            </div>
+
+            <div class="contact-grid">
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a id="contact-email-link" href="#">dracohe0609@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                <span id="phone-text"></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Target</span>
+                <span id="target-text"></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Education</span>
+                <span id="education-text"></span>
+              </div>
+            </div>
+
+            <div class="cta-row">
+              <a id="email-link" class="button button-primary" href="#">邮件联系</a>
+              <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历 PDF</a>
+            </div>
+
+            <p id="signoff" class="signoff"></p>
+          </section>
         </div>
-
-        <div class="resume-panel">
-          <a id="resume-inline-link" href="#" target="_blank" rel="noreferrer">查看 PDF 简历</a>
-        </div>
-
-        <div class="contact-grid">
-          <div class="contact-item">
-            <span class="contact-label">Email</span>
-            <a id="contact-email-link" href="#">dracohe0609@gmail.com</a>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Phone</span>
-            <span id="phone-text"></span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Target</span>
-            <span id="target-text"></span>
-          </div>
-          <div class="contact-item">
-            <span class="contact-label">Education</span>
-            <span id="education-text"></span>
-          </div>
-        </div>
-
-        <div class="cta-row">
-          <a id="email-link" class="button button-primary" href="#">邮件联系</a>
-          <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历 PDF</a>
-        </div>
-
-        <p id="signoff" class="signoff"></p>
-      </section>
+      </div>
     </main>
 
     <script src="./script.js"></script>
