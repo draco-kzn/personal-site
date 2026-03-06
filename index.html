@@ -3,103 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>何泽宇 | Web Cover Letter</title>
+    <title>何泽宇 | Concise Cover Letter</title>
     <meta
       name="description"
-      content="何泽宇的网页化求职信，面向 AI 投资、AI 产品、AI 战略相关实习。"
+      content="何泽宇的 one-page 网页化求职信，面向 AI 投资、AI 产品、AI 战略相关实习。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="page-shell">
-      <header class="top-note">
+    <main class="page-shell">
+      <section class="intro-strip">
         <p id="opening-line"></p>
-      </header>
+      </section>
 
-      <main class="letter-layout">
-        <aside class="letter-nav">
-          <p class="nav-label">Profile</p>
-          <a href="#hero">Intro</a>
-          <a href="#values">Values</a>
-          <a href="#results">Results-Oriented</a>
-          <a href="#fit">Character & Fit</a>
-          <a href="#closing">Closing</a>
-        </aside>
+      <section class="hero-visual" aria-hidden="true">
+        <div class="hero-ridge ridge-back"></div>
+        <div class="hero-ridge ridge-mid"></div>
+        <div class="hero-ridge ridge-front"></div>
+        <div class="hero-glow"></div>
+      </section>
 
-        <div class="letter-content">
-          <section class="hero-card" id="hero">
-            <p class="eyebrow">concise cover letter</p>
-            <h1 id="hero-title"></h1>
-            <p id="hero-subtitle" class="hero-subtitle"></p>
-            <div class="hero-actions">
-              <a id="email-link" class="button button-primary" href="#">邮件联系</a>
-              <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历 PDF</a>
-            </div>
-          </section>
+      <section class="hero-card">
+        <p class="eyebrow">Concise Cover Letter</p>
+        <h1 id="hero-title"></h1>
+        <p id="hero-subtitle" class="hero-subtitle"></p>
+        <p id="identity-text" class="identity-text"></p>
+      </section>
 
-          <section class="section-card prose-card">
-            <h2>写给你的一段说明</h2>
-            <p id="identity-text"></p>
-          </section>
+      <section class="value-box">
+        <p id="values-intro" class="value-intro"></p>
+        <ul id="values-list" class="bullet-list compact"></ul>
+      </section>
 
-          <section class="section-card" id="values">
-            <div class="section-head">
-              <p class="eyebrow">shared values</p>
-              <h2>我为什么想加入这样的团队</h2>
-            </div>
-            <p id="values-intro" class="section-intro"></p>
-            <ul id="values-list" class="bullet-list"></ul>
-          </section>
+      <section class="transition-copy">
+        <p id="results-intro"></p>
+      </section>
 
-          <section class="section-card" id="results">
-            <div class="section-head">
-              <p class="eyebrow">Results-Oriented</p>
-              <h2>我做过什么</h2>
-            </div>
-            <p id="results-intro" class="section-intro"></p>
-            <ul id="results-list" class="bullet-list"></ul>
-          </section>
+      <section class="two-column-grid">
+        <article class="column-card">
+          <div class="section-head">
+            <span class="section-icon">💼</span>
+            <h2>全职相关成果产出 <span class="en-label">Results-Oriented</span></h2>
+          </div>
+          <ul id="results-list" class="bullet-list"></ul>
+        </article>
 
-          <section class="section-card" id="fit">
-            <div class="section-head">
-              <p class="eyebrow">Character & Fit</p>
-              <h2>我是什么样的人</h2>
-            </div>
-            <p id="fit-intro" class="section-intro"></p>
-            <ul id="fit-list" class="bullet-list"></ul>
-          </section>
+        <article class="column-card">
+          <div class="section-head">
+            <span class="section-icon">🧠</span>
+            <h2>能力特质 <span class="en-label">Character &amp; Fit</span></h2>
+          </div>
+          <p id="fit-intro" class="section-intro"></p>
+          <ul id="fit-list" class="bullet-list"></ul>
+        </article>
+      </section>
 
-          <blockquote id="quote-block" class="quote-card"></blockquote>
+      <blockquote id="quote-block" class="quote-card"></blockquote>
 
-          <section class="section-card closing-card" id="closing">
-            <div class="section-head">
-              <p class="eyebrow">closing</p>
-              <h2>最后想说的话</h2>
-            </div>
-            <p id="closing-text"></p>
-            <div class="contact-grid">
-              <div class="contact-item">
-                <span class="contact-label">Resume</span>
-                <a id="resume-inline-link" href="#" target="_blank" rel="noreferrer">查看 PDF</a>
-              </div>
-              <div class="contact-item">
-                <span class="contact-label">Email</span>
-                <a id="contact-email-link" href="#">dracohe0609@gmail.com</a>
-              </div>
-              <div class="contact-item">
-                <span class="contact-label">Phone</span>
-                <span id="phone-text"></span>
-              </div>
-              <div class="contact-item">
-                <span class="contact-label">Target</span>
-                <span id="target-text"></span>
-              </div>
-            </div>
-            <p id="signoff" class="signoff"></p>
-          </section>
+      <section class="closing-copy">
+        <p id="closing-text"></p>
+      </section>
+
+      <section class="contact-card">
+        <div class="contact-head">
+          <p class="eyebrow">Closing</p>
+          <h2>随信附上我的简历，期待有机会进一步交流</h2>
         </div>
-      </main>
-    </div>
+
+        <div class="resume-panel">
+          <a id="resume-inline-link" href="#" target="_blank" rel="noreferrer">查看 PDF 简历</a>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-item">
+            <span class="contact-label">Email</span>
+            <a id="contact-email-link" href="#">dracohe0609@gmail.com</a>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Phone</span>
+            <span id="phone-text"></span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Target</span>
+            <span id="target-text"></span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">Education</span>
+            <span id="education-text"></span>
+          </div>
+        </div>
+
+        <div class="cta-row">
+          <a id="email-link" class="button button-primary" href="#">邮件联系</a>
+          <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历 PDF</a>
+        </div>
+
+        <p id="signoff" class="signoff"></p>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
