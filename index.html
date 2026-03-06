@@ -11,14 +11,11 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div class="background-orb orb-left"></div>
-    <div class="background-orb orb-right"></div>
-
     <div class="page-shell">
       <nav class="topbar">
-        <div class="topbar-mark">
+        <div class="brand-block">
           <span class="brand">He Zeyu</span>
-          <span class="brand-note">Strategy / Investment / AI</span>
+          <span class="brand-subtitle">Strategy / Investment / Business Analysis</span>
         </div>
         <div class="topbar-links">
           <a href="#about">概览</a>
@@ -28,9 +25,12 @@
         </div>
       </nav>
 
-      <header class="hero-board">
-        <section class="hero-main">
-          <p class="eyebrow">Internship Portfolio</p>
+      <header class="hero">
+        <div class="hero-main">
+          <div class="hero-kicker-row">
+            <span class="hero-kicker">Executive Summary</span>
+            <span class="hero-date">Updated 2026</span>
+          </div>
           <h1>何泽宇</h1>
           <p id="hero-summary" class="hero-summary"></p>
 
@@ -39,68 +39,75 @@
             <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历</a>
           </div>
 
-          <div id="hero-thesis" class="thesis-strip"></div>
-          <ul id="hero-metrics" class="metrics"></ul>
-        </section>
+          <div id="hero-thesis" class="summary-grid"></div>
+        </div>
 
         <aside class="hero-side">
-          <div class="dossier-card">
-            <div class="dossier-head">
-              <span class="dossier-label">Candidate Dossier</span>
-              <span class="dossier-code">HZY-2026</span>
+          <section class="sidebar-card candidate-card">
+            <div class="sidebar-header">
+              <p class="sidebar-label">Candidate Snapshot</p>
+              <span class="sidebar-code">HZY</span>
             </div>
             <div id="quick-facts" class="quick-facts"></div>
-          </div>
+          </section>
+
+          <section class="sidebar-card metrics-card">
+            <p class="sidebar-label">Selected Metrics</p>
+            <ul id="hero-metrics" class="metrics"></ul>
+          </section>
         </aside>
       </header>
 
       <main>
-        <section class="section about-layout" id="about">
-          <div class="section-tag">
-            <span>01</span>
-            <p>Profile</p>
+        <section class="section" id="about">
+          <div class="section-rail">
+            <span class="section-index">01</span>
+            <p class="section-name">Profile</p>
           </div>
-          <div class="section-body intro-panel">
-            <h2>我能提供的价值</h2>
+          <div class="section-content statement-card">
+            <div class="section-heading">
+              <h2>我能提供的价值</h2>
+              <p class="section-annotation">强调结构化思考、信息压缩能力和稳定输出。</p>
+            </div>
             <p id="about-text"></p>
           </div>
         </section>
 
-        <section class="section projects-layout" id="projects">
-          <div class="section-tag">
-            <span>02</span>
-            <p>Selected Work</p>
+        <section class="section" id="projects">
+          <div class="section-rail">
+            <span class="section-index">02</span>
+            <p class="section-name">Selected Work</p>
           </div>
-          <div class="section-body">
-            <div class="section-title-row">
+          <div class="section-content">
+            <div class="section-heading">
               <h2>项目与研究实践</h2>
-              <p class="section-note">从行业研究到 AI 应用验证，强调分析框架与可落地输出。</p>
+              <p class="section-annotation">聚焦问题拆解、分析框架与可交付结论。</p>
             </div>
             <div id="project-list" class="project-list"></div>
           </div>
         </section>
 
-        <section class="section split-layout">
-          <div class="section-tag">
-            <span>03</span>
-            <p>Experience</p>
+        <section class="section">
+          <div class="section-rail">
+            <span class="section-index">03</span>
+            <p class="section-name">Experience</p>
           </div>
-          <div class="section-body split-grid">
-            <div id="experience" class="panel"></div>
-            <div id="skills" class="panel panel-dark"></div>
+          <div class="section-content dual-panel">
+            <div id="experience" class="content-panel"></div>
+            <div id="skills" class="content-panel"></div>
           </div>
         </section>
 
-        <section class="section contact-layout" id="contact">
-          <div class="section-tag">
-            <span>04</span>
-            <p>Contact</p>
+        <section class="section" id="contact">
+          <div class="section-rail">
+            <span class="section-index">04</span>
+            <p class="section-name">Contact</p>
           </div>
-          <div class="section-body contact-card">
-            <div>
+          <div class="section-content contact-card">
+            <div class="section-heading compact">
               <h2>如果岗位需要快速上手研究与分析，我可以直接进入工作状态</h2>
-              <p id="contact-text"></p>
             </div>
+            <p id="contact-text"></p>
             <div class="contact-actions">
               <a id="contact-email-link" class="button button-primary" href="#">发送邮件</a>
               <a id="contact-secondary-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历</a>
