@@ -26,6 +26,7 @@ const profile = {
     { label: "教育背景", value: "UIBE 本科，Fudan DDIM incoming" },
     { label: "联系方式", value: "156-1600-4799 / dracohe0609@gmail.com" },
     { label: "目标团队", value: "AI VC / 互联网 AI 战略 / 咨询" },
+    { label: "核心能力", value: "赛道研究 / 商业化判断 / 产品分析 / 决策材料输出" },
   ],
   projects: [
     {
