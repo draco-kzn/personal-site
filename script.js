@@ -23,7 +23,7 @@ const profile = {
   ],
   quickFacts: [
     { label: "目标岗位", value: "AI 投资 / AI 产品 / AI 战略实习" },
-    { label: "教育背景", value: "UIBE 本科，Fudan MIM incoming" },
+    { label: "教育背景", value: "UIBE 本科，Fudan DDIM incoming" },
     { label: "联系方式", value: "156-1600-4799 / dracohe0609@gmail.com" },
     { label: "目标团队", value: "AI VC / 互联网 AI 战略 / 咨询" },
   ],
