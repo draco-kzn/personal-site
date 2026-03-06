@@ -1,253 +1,140 @@
 const profile = {
-  name: "何泽宇",
-  title: "求职方向：AI 投资、AI 产品、AI 战略相关实习",
-  summary:
-    "我有基金、投后、战略团队和 AI 产品实践的交叉经历，能在较短时间内完成行业扫描、信息结构化、竞品与财务分析，并输出面向管理层或投资决策的研究材料。",
+  openingLine:
+    "这是一封写给 AI VC、互联网 AI 战略团队和咨询经理的网页化求职信。阅读时间大约 3 分钟。",
+  heroTitle: "何泽宇，想做 AI 投资 / AI 产品 / AI 战略相关实习。",
+  heroSubtitle:
+    "如果你在找一个既能做 AI 行业研究、又能理解产品与商业化、还能把信息压缩成决策材料的人，这个页面就是写给你的。",
   email: "dracohe0609@gmail.com",
+  phone: "156-1600-4799",
   resumeUrl: "./resume.pdf",
-  secondaryLink: {
-    label: "查看简历",
-    url: "./resume.pdf",
-  },
-  about:
-    "本科就读于对外经济贸易大学国际商学院市场营销专业，曾于法国 Kedge Business School 交换，并将于 2026 年进入复旦大学管理学院攻读国际管理双硕士。我希望进入 AI 投资、AI 产品或 AI 战略相关岗位，在真实业务里继续积累对 AI 应用场景、商业化路径与竞争格局的判断力。我的优势在于能够快速进入新赛道语境，抓住关键变量，搭建分析框架，并把结论沉淀成可直接用于沟通和决策的材料。",
-  thesis: [
-    "目标方向明确聚焦 AI 投资、AI 产品与 AI 战略",
-    "兼具基金、战略、投后与 AI 应用的交叉视角",
-    "适合 AI VC、互联网 AI 战略与咨询团队的研究分析工作",
-  ],
-  metrics: [
-    { value: "4段", label: "核心实习经历" },
-    { value: "70+", label: "会议纪要与研究输出" },
-    { value: "10+", label: "IC Memo / 管理汇报" },
-  ],
-  quickFacts: [
-    { label: "目标岗位", value: "AI 投资 / AI 产品 / AI 战略实习" },
-    { label: "教育背景", value: "对外经贸本科，Fudan DDIM incoming" },
-    { label: "联系方式", value: "156-1600-4799 / dracohe0609@gmail.com" },
-    { label: "目标团队", value: "AI VC / 互联网 AI 战略 / 咨询" },
-    { label: "核心能力", value: "赛道研究 / 商业化判断 / 产品分析 / 决策材料输出" },
-  ],
-  projects: [
+  target: "AI VC / 互联网 AI 战略 / 咨询",
+  identity:
+    "我现在是对外经济贸易大学本科生，未来是 Fudan DDIM incoming。过去这段时间里，我分别在基金、投后、战略团队和 AI 产品实践里工作过。也正因为这些经历交叉在一起，我越来越明确自己想去的方向，不是泛泛的“战略”或“商业分析”，而是更聚焦的 AI 投资、AI 产品和 AI 战略。我希望加入一个要求高、反馈真实、节奏快的团队，把对 AI 应用场景、商业化路径和竞争格局的判断，转化成真正有价值的研究、分析和输出。",
+  valuesIntro:
+    "我会被好的团队吸引，通常不是因为 title，而是因为它们同时重视 <mark>判断力</mark>、<mark>诚实沟通</mark> 和 <mark>长期主义</mark>。这也是我想加入 AI VC、互联网 AI 战略和咨询团队的原因。",
+  values: [
     {
-      name: "AI 驱动的沉浸式旅行决策模拟器",
-      tags: ["AI 产品", "产品建模", "Streamlit"],
-      description:
-        "针对复杂旅行场景中的多目标权衡问题，将传统静态推荐改造为可交互的决策模拟器，把时间、预算、体力损耗等变量纳入同一套决策框架。",
-      outcome:
-        "独立完成约束模型、Game Loop 和状态机式 Prompt 设计，并用缓存机制优化高频调用时延，使产品逻辑和交互体验同时成立。",
-      linkText: "查看项目",
-      linkUrl: "https://travelai-draco.streamlit.app",
+      keyword: "我认同高标准。",
+      text: "我更愿意在一个要求清晰、反馈直接、对材料质量有要求的环境里工作，而不是只做表面完成度。",
     },
     {
-      name: "万事达卡咨询案例大赛",
-      tags: ["消费研究", "案例分析", "可视化表达"],
-      description:
-        "基于 20 余份 Z 世代消费行为研究，提炼目标客群的消费动因、使用场景与偏好差异，并围绕信用卡产品设计更具吸引力的权益组合。",
-      outcome:
-        "使用 Think-cell 搭建 13 张图表与数据展示逻辑，将用户洞察转化为产品权益设计和触达策略建议。",
-      linkText: "查看简历",
-      linkUrl: "./resume.pdf",
+      keyword: "我喜欢问题导向。",
+      text: "无论是赛道研究、产品分析还是竞争格局判断，我都习惯先定义问题，再拆变量，而不是一上来堆信息。",
     },
     {
-      name: "AI 赛道研究与商业化分析",
-      tags: ["AI 投资", "行业研究", "商业化判断"],
-      description:
-        "围绕 AI 内容、机器人、效率工具和电商等方向，持续进行赛道拆解、公司研究、竞品测评和技术商业化路径分析。",
-      outcome:
-        "形成了从市场空间、产业链位置、核心指标到落地场景验证的一套分析方法，能够较快沉淀为 Memo、纪要和管理层汇报。",
-      linkText: "查看简历",
-      linkUrl: "./resume.pdf",
+      keyword: "我相信长期复利。",
+      text: "我很在意一份工作能否持续训练我的判断力、表达能力和对技术商业化的理解，而不只是短期执行。",
     },
   ],
-  experience: [
+  resultsIntro:
+    "如果用一句话总结我的经历，就是我已经在多个真实业务环境里练过“快速进入新语境并稳定输出”的能力。",
+  results: [
     {
-      title: "锦秋基金 | AI 投资实习生",
-      date: "2025/07 - 2026/01",
-      copy:
-        "聚焦 AI 应用场景与产业链研究，围绕短剧、电商、机器人等方向完成赛道拆解、公司访谈、竞品测评和商业化分析。6 个月内产出 70+ 篇会议纪要、10 篇 IC Memo、3 篇深度研究，并参与 AI UGC 项目推进与技术尽调。",
+      keyword: "AI 投资研究。",
+      text: "在锦秋基金做 AI 投资实习时，我围绕短剧、电商、机器人等方向做赛道拆解、访谈纪要、竞品测评和商业化分析，6 个月内累计完成 70+ 篇会议纪要、10 篇 IC Memo 和 3 篇深度研究。",
     },
     {
-      title: "滴滴 | 战略实习生（国际化外卖）",
-      date: "2024/12 - 2025/04",
-      copy:
-        "负责拉美外卖市场的竞品追踪、行业扫描与经营指标分析，围绕 Uber Eats、Rappi、Mercado Libre 等玩家梳理 GMV、Revenue、Adjusted EBITDA 等核心指标，形成月度市场分析和全球外卖行业简报。",
+      keyword: "战略分析。",
+      text: "在滴滴国际化外卖团队，我长期跟踪拉美市场，分析 Uber Eats、Rappi、Mercado Libre 等对手的 GMV、Revenue、Adjusted EBITDA 和市场动态，把零散信息转化成月度市场分析和行业简报。",
     },
     {
-      title: "BAI Capital | 投后管理实习生",
-      date: "2025/04 - 2025/07",
-      copy:
-        "结合财报与 Capital IQ 跟踪被投企业的财务和经营异动，制作面向贝塔斯曼负责人的季度汇报材料，并维护基金收益与被投公司财务数据库，支撑投后判断和资产表现跟踪。",
+      keyword: "投后与财务。",
+      text: "在 BAI Capital，我结合财报和 Capital IQ 跟踪被投企业的财务与经营异动，支持季度汇报和数据库维护，训练了面向管理层的表达方式。",
     },
     {
-      title: "BCG | 战略分析助理",
-      date: "2024/06 - 2024/09",
-      copy:
-        "参与啤酒行业增长与利润问题分析，完成行业结构、品牌验证、消费者问卷和市场进入建议研究，输出面向客户的策略 slide 与商品结构优化建议。",
+      keyword: "AI 产品实践。",
+      text: "我自己做过 AI 驱动的沉浸式旅行决策模拟器，从产品问题定义、约束模型到 Prompt 策略和缓存优化，完整走过了一遍从 idea 到 demo 的过程。",
     },
   ],
-  skillGroups: [
+  fitIntro:
+    "除了“做过什么”，我也想补充一下“我怎么工作”。对我来说，Character & Fit 不是空话，而是决定能不能和团队长期一起做事的部分。",
+  fit: [
     {
-      title: "AI 研究与分析能力",
-      note: "适合 AI 投资、AI 战略、AI 咨询相关岗位。",
-      items: ["AI 行业研究", "竞品分析", "财务分析", "管理层汇报", "会议纪要 / Memo 撰写"],
+      keyword: "我进入状态快。",
+      text: "新行业、新团队、新问题对我不是阻力。我比较擅长先快速建立问题地图，再逐步把细节补齐。",
     },
     {
-      title: "产品与工具能力",
-      note: "支持数据处理、建模、可视化和 AI 产品验证。",
-      items: ["Python", "SQL", "Matlab", "Streamlit", "Think-cell", "Capital IQ"],
+      keyword: "我写作和表达稳定。",
+      text: "我对材料质量有要求，会主动把复杂信息整理成经理愿意看、也看得快的版本。",
     },
     {
-      title: "国际化与沟通背景",
-      note: "跨文化学习与业务语境适配是我的明显优势。",
-      items: ["中英双语材料", "法国交换经历", "跨区域市场研究", "高密度沟通协作"],
+      keyword: "我不是只会研究。",
+      text: "我对 AI 产品也有真实兴趣，愿意从场景、用户、流程和交互去理解技术如何真正落地。",
+    },
+    {
+      keyword: "我合作方式直接但认真。",
+      text: "我很珍惜明确目标、及时沟通和高质量反馈，也愿意在压力下持续把输出打磨到更可靠。",
     },
   ],
-  contactText:
-    "如果你正在招募 AI 投资、AI 产品或 AI 战略方向的实习生，欢迎直接联系我。我希望进入 AI VC、互联网 AI 战略或咨询团队，在更复杂的技术与商业问题中继续提升判断力、产品感和执行力。",
+  quote:
+    "“我想做的，不只是把信息收集完整，而是把复杂问题整理到足够清楚，让别人可以更快做判断。”",
+  closing:
+    "如果你正在招募 AI 投资、AI 产品或 AI 战略方向的实习生，也希望这个人既能做 research，也能理解产品和商业化，我会很希望和你聊聊。谢谢你花时间看到这里。",
+  signoff: "谢谢阅读。期待有机会进一步交流。 - 何泽宇",
 };
 
 function setText(id, value) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.textContent = value;
-  }
+  const node = document.getElementById(id);
+  if (node) node.textContent = value;
+}
+
+function setHTML(id, value) {
+  const node = document.getElementById(id);
+  if (node) node.innerHTML = value;
 }
 
 function setLink(id, href, text) {
-  const element = document.getElementById(id);
-  if (element) {
-    element.href = href;
-    if (text) element.textContent = text;
-  }
+  const node = document.getElementById(id);
+  if (!node) return;
+  node.href = href;
+  if (text) node.textContent = text;
 }
 
-function renderMetrics() {
-  const root = document.getElementById("hero-metrics");
-  root.innerHTML = profile.metrics
+function renderBulletList(id, items) {
+  const node = document.getElementById(id);
+  if (!node) return;
+  node.innerHTML = items
     .map(
-      (metric, index) => `
-        <li class="reveal reveal-delay-${index}">
-          <span class="metric-value">${metric.value}</span>
-          <span class="metric-label">${metric.label}</span>
+      (item) => `
+        <li class="reveal">
+          <strong>${item.keyword}</strong>${item.text}
         </li>
       `
     )
     .join("");
 }
 
-function renderThesis() {
-  const root = document.getElementById("hero-thesis");
-  root.innerHTML = profile.thesis
-    .map(
-      (item, index) => `
-        <div class="thesis-item reveal reveal-delay-${index}">
-          <span class="thesis-index">0${index + 1}</span>
-          <p>${item}</p>
-        </div>
-      `
-    )
-    .join("");
-}
-
-function renderQuickFacts() {
-  const root = document.getElementById("quick-facts");
-  root.innerHTML = profile.quickFacts
-    .map(
-      (fact, index) => `
-        <article class="fact-item reveal reveal-delay-${index}">
-          <span class="fact-label">${fact.label}</span>
-          <span class="fact-value">${fact.value}</span>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderProjects() {
-  const root = document.getElementById("project-list");
-  root.innerHTML = profile.projects
-    .map(
-      (project, index) => `
-        <article class="project-card reveal reveal-delay-${index}">
-          <div class="project-meta">
-            ${project.tags.map((tag) => `<span>${tag}</span>`).join("")}
-          </div>
-          <h3 class="project-title">${project.name}</h3>
-          <p class="project-description">${project.description}</p>
-          <div class="project-footer">
-            <span class="project-outcome">${project.outcome}</span>
-            <a class="project-link" href="${project.linkUrl}" target="_blank" rel="noreferrer">${project.linkText}</a>
-          </div>
-        </article>
-      `
-    )
-    .join("");
-}
-
-function renderExperience() {
-  const root = document.getElementById("experience-panel");
-  root.innerHTML = `
-    <p class="eyebrow">Experience</p>
-    <h3>实习经历</h3>
-    <div class="timeline">
-      ${profile.experience
-        .map(
-          (item) => `
-            <article class="timeline-item">
-              <div class="timeline-head">
-                <span class="timeline-title">${item.title}</span>
-                <span class="timeline-date">${item.date}</span>
-              </div>
-              <div class="timeline-copy">${item.copy}</div>
-            </article>
-          `
-        )
-        .join("")}
-    </div>
-  `;
-}
-
-function renderSkills() {
-  const root = document.getElementById("skills");
-  root.innerHTML = `
-    <p class="eyebrow">Capabilities</p>
-    <h3>能力概览</h3>
-    <div class="skill-groups">
-      ${profile.skillGroups
-        .map(
-          (group) => `
-            <section class="skill-group">
-              <h4 class="skill-group-title">${group.title}</h4>
-              <p class="skill-note">${group.note}</p>
-              <div class="skill-tags">
-                ${group.items.map((item) => `<span class="skill-tag">${item}</span>`).join("")}
-              </div>
-            </section>
-          `
-        )
-        .join("")}
-    </div>
-  `;
-}
-
 function init() {
-  document.title = `${profile.name} | Strategy & Investment Portfolio`;
-  setText("hero-summary", `${profile.title}。${profile.summary}`);
-  setText("about-text", profile.about);
-  setText("contact-text", profile.contactText);
+  document.title = "何泽宇 | Web Cover Letter";
+  setText("opening-line", profile.openingLine);
+  setText("hero-title", profile.heroTitle);
+  setText("hero-subtitle", profile.heroSubtitle);
+  setText("identity-text", profile.identity);
+  setHTML("values-intro", profile.valuesIntro);
+  setText("results-intro", profile.resultsIntro);
+  setText("fit-intro", profile.fitIntro);
+  setText("quote-block", profile.quote);
+  setText("closing-text", profile.closing);
+  setText("signoff", profile.signoff);
+  setText("phone-text", profile.phone);
+  setText("target-text", profile.target);
 
   setLink("email-link", `mailto:${profile.email}`, "邮件联系");
+  setLink("resume-link", profile.resumeUrl, "查看简历 PDF");
+  setLink("resume-inline-link", profile.resumeUrl, "查看 PDF");
   setLink("contact-email-link", `mailto:${profile.email}`, profile.email);
-  setLink("resume-link", profile.resumeUrl, "查看简历");
-  setLink("contact-secondary-link", profile.secondaryLink.url, profile.secondaryLink.label);
 
-  renderMetrics();
-  renderThesis();
-  renderQuickFacts();
-  renderProjects();
-  renderExperience();
-  renderSkills();
+  renderBulletList("values-list", profile.values);
+  renderBulletList("results-list", profile.results);
+  renderBulletList("fit-list", profile.fit);
+
+  const quickFacts = document.getElementById("quick-facts");
+  quickFacts.innerHTML = `
+    <article class="fact-item reveal"><span class="fact-label">方向</span><span class="fact-value">${profile.target}</span></article>
+    <article class="fact-item reveal"><span class="fact-label">教育</span><span class="fact-value">对外经贸本科，Fudan DDIM incoming</span></article>
+    <article class="fact-item reveal"><span class="fact-label">联系</span><span class="fact-value">${profile.phone}<br />${profile.email}</span></article>
+    <article class="fact-item reveal"><span class="fact-label">关键词</span><span class="fact-value">AI investment, AI product, AI strategy</span></article>
+  `;
 }
 
 init();

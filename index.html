@@ -3,125 +3,99 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>何泽宇 | Strategy & Investment Portfolio</title>
+    <title>何泽宇 | Web Cover Letter</title>
     <meta
       name="description"
-      content="何泽宇的个人网站，展示战略、投资、商业分析与 AI 应用相关经历，用于实习投递。"
+      content="何泽宇的网页化求职信，面向 AI 投资、AI 产品、AI 战略相关实习。"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <div class="page-shell">
-      <nav class="topbar">
-        <div class="brand-block">
-          <span class="brand">He Zeyu</span>
-          <span class="brand-subtitle">Strategy / Investment / Business Analysis</span>
-        </div>
-        <div class="topbar-links">
-          <a href="#about">概览</a>
-          <a href="#projects">项目</a>
-          <a href="#experience">经历</a>
-          <a href="#contact">联系</a>
-        </div>
-      </nav>
-
-      <header class="hero">
-        <div class="hero-main">
-          <div class="hero-kicker-row">
-            <span class="hero-kicker">Executive Summary</span>
-            <span class="hero-date">Updated 2026</span>
-          </div>
-          <h1>何泽宇</h1>
-          <p id="hero-summary" class="hero-summary"></p>
-
-          <div class="hero-actions">
-            <a id="email-link" class="button button-primary" href="#">邮件联系</a>
-            <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历</a>
-          </div>
-
-          <div id="hero-thesis" class="summary-grid"></div>
-        </div>
-
-        <aside class="hero-side">
-          <section class="sidebar-card candidate-card">
-            <div class="sidebar-header">
-              <p class="sidebar-label">Candidate Snapshot</p>
-              <span class="sidebar-code">HZY</span>
-            </div>
-            <div id="quick-facts" class="quick-facts"></div>
-          </section>
-
-          <section class="sidebar-card metrics-card">
-            <p class="sidebar-label">Selected Metrics</p>
-            <ul id="hero-metrics" class="metrics"></ul>
-          </section>
-        </aside>
+      <header class="top-note">
+        <p id="opening-line"></p>
       </header>
 
-      <main class="main-layout">
-        <aside class="toc-card">
-          <p class="toc-label">Profile Contents</p>
-          <a href="#about">01 Overview</a>
-          <a href="#projects">02 Selected Work</a>
-          <a href="#experience">03 Experience</a>
-          <a href="#contact">04 Contact</a>
+      <main class="letter-layout">
+        <aside class="letter-nav">
+          <p class="nav-label">Profile</p>
+          <a href="#hero">Intro</a>
+          <a href="#values">Values</a>
+          <a href="#results">Results-Oriented</a>
+          <a href="#fit">Character & Fit</a>
+          <a href="#closing">Closing</a>
         </aside>
 
-        <div class="content-flow">
-          <section class="section" id="about">
-            <div class="section-rail">
-              <span class="section-index">01</span>
-              <p class="section-name">Profile</p>
-            </div>
-            <div class="section-content statement-card">
-              <div class="section-heading">
-                <h2>我能提供的价值</h2>
-                <p class="section-annotation">强调结构化思考、信息压缩能力和稳定输出。</p>
-              </div>
-              <p id="about-text"></p>
+        <div class="letter-content">
+          <section class="hero-card" id="hero">
+            <p class="eyebrow">concise cover letter</p>
+            <h1 id="hero-title"></h1>
+            <p id="hero-subtitle" class="hero-subtitle"></p>
+            <div class="hero-actions">
+              <a id="email-link" class="button button-primary" href="#">邮件联系</a>
+              <a id="resume-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历 PDF</a>
             </div>
           </section>
 
-          <section class="section" id="projects">
-            <div class="section-rail">
-              <span class="section-index">02</span>
-              <p class="section-name">Selected Work</p>
-            </div>
-            <div class="section-content">
-              <div class="section-heading">
-                <h2>项目与研究实践</h2>
-                <p class="section-annotation">聚焦问题拆解、分析框架与可交付结论。</p>
-              </div>
-              <div id="project-list" class="project-list"></div>
-            </div>
+          <section class="section-card prose-card">
+            <h2>写给你的一段说明</h2>
+            <p id="identity-text"></p>
           </section>
 
-          <section class="section" id="experience">
-            <div class="section-rail">
-              <span class="section-index">03</span>
-              <p class="section-name">Experience</p>
+          <section class="section-card" id="values">
+            <div class="section-head">
+              <p class="eyebrow">shared values</p>
+              <h2>我为什么想加入这样的团队</h2>
             </div>
-            <div class="section-content dual-panel">
-              <div id="experience-panel" class="content-panel"></div>
-              <div id="skills" class="content-panel"></div>
-            </div>
+            <p id="values-intro" class="section-intro"></p>
+            <ul id="values-list" class="bullet-list"></ul>
           </section>
 
-          <section class="section" id="contact">
-            <div class="section-rail">
-              <span class="section-index">04</span>
-              <p class="section-name">Contact</p>
+          <section class="section-card" id="results">
+            <div class="section-head">
+              <p class="eyebrow">Results-Oriented</p>
+              <h2>我做过什么</h2>
             </div>
-            <div class="section-content contact-card">
-              <div class="section-heading compact">
-                <h2>如果岗位需要快速上手研究与分析，我可以直接进入工作状态</h2>
+            <p id="results-intro" class="section-intro"></p>
+            <ul id="results-list" class="bullet-list"></ul>
+          </section>
+
+          <section class="section-card" id="fit">
+            <div class="section-head">
+              <p class="eyebrow">Character & Fit</p>
+              <h2>我是什么样的人</h2>
+            </div>
+            <p id="fit-intro" class="section-intro"></p>
+            <ul id="fit-list" class="bullet-list"></ul>
+          </section>
+
+          <blockquote id="quote-block" class="quote-card"></blockquote>
+
+          <section class="section-card closing-card" id="closing">
+            <div class="section-head">
+              <p class="eyebrow">closing</p>
+              <h2>最后想说的话</h2>
+            </div>
+            <p id="closing-text"></p>
+            <div class="contact-grid">
+              <div class="contact-item">
+                <span class="contact-label">Resume</span>
+                <a id="resume-inline-link" href="#" target="_blank" rel="noreferrer">查看 PDF</a>
               </div>
-              <p id="contact-text"></p>
-              <div class="contact-actions">
-                <a id="contact-email-link" class="button button-primary" href="#">发送邮件</a>
-                <a id="contact-secondary-link" class="button button-secondary" href="#" target="_blank" rel="noreferrer">查看简历</a>
+              <div class="contact-item">
+                <span class="contact-label">Email</span>
+                <a id="contact-email-link" href="#">dracohe0609@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Phone</span>
+                <span id="phone-text"></span>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label">Target</span>
+                <span id="target-text"></span>
               </div>
             </div>
+            <p id="signoff" class="signoff"></p>
           </section>
         </div>
       </main>
