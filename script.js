@@ -157,6 +157,7 @@ function init() {
 
   setLink("email-link", `mailto:${profile.email}`, "邮件联系");
   setLink("resume-link", profile.resumeUrl, "查看简历 PDF");
+  setLink("hero-resume-link", profile.resumeUrl, "查看简历");
   setLink("resume-inline-link", profile.resumeUrl, "查看 PDF 简历");
   setLink("contact-email-link", `mailto:${profile.email}`, profile.email);
 
