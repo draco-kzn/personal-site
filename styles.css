@@ -53,8 +53,8 @@ body::before {
 
 .page-layout {
   display: grid;
-  grid-template-columns: 64px minmax(0, 1fr);
-  gap: 18px;
+  grid-template-columns: 56px minmax(0, 1fr);
+  gap: 24px;
   align-items: start;
 }
 
@@ -64,31 +64,35 @@ body::before {
 
 .side-rail {
   position: sticky;
-  top: 24px;
+  top: 28px;
   display: grid;
-  gap: 8px;
-  padding-top: 4px;
+  gap: 10px;
+  padding-top: 6px;
+  opacity: 0.88;
 }
 
 .rail-link {
   display: grid;
   justify-items: center;
   gap: 4px;
-  padding: 10px 4px;
-  border: 1px solid var(--line);
-  border-left: 3px solid var(--brand);
-  border-radius: var(--radius-md);
-  background: rgba(255, 255, 255, 0.82);
-  color: var(--muted);
+  padding: 9px 4px;
+  border: 1px solid rgba(5, 28, 44, 0.08);
+  border-left: 2px solid rgba(34, 81, 255, 0.42);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.62);
+  color: var(--muted-soft);
   text-decoration: none;
-  box-shadow: var(--shadow);
-  transition: transform 160ms ease, border-color 160ms ease, color 160ms ease;
+  box-shadow: 0 6px 18px rgba(5, 28, 44, 0.04);
+  backdrop-filter: blur(8px);
+  transition: transform 160ms ease, border-color 160ms ease, color 160ms ease, background 160ms ease, opacity 160ms ease;
 }
 
 .rail-link:hover {
   transform: translateX(1px);
   color: var(--brand);
-  border-color: var(--line-strong);
+  border-color: rgba(34, 81, 255, 0.18);
+  background: rgba(255, 255, 255, 0.92);
+  opacity: 1;
 }
 
 .rail-link span {
@@ -117,9 +121,58 @@ body::before {
 }
 
 .intro-strip {
-  margin-bottom: 18px;
+  margin-bottom: 22px;
   padding: 18px 22px;
   border-left: 4px solid var(--brand);
+}
+
+.hero-card-centered {
+  margin-top: 6px;
+  margin-bottom: 24px;
+}
+
+.hero-card-centered .hero-actions {
+  margin-top: 24px;
+}
+
+.hero-card-centered .hero-badges {
+  margin-top: 16px;
+  margin-bottom: 12px;
+}
+
+.hero-visual {
+  margin-bottom: 22px;
+}
+
+.hero-visual-caption {
+  letter-spacing: 0.01em;
+}
+
+.hero-card-centered .hero-subtitle {
+  margin-top: 18px;
+  margin-bottom: 16px;
+}
+
+.hero-card-centered .identity-text {
+  margin-top: 0;
+}
+
+.hero-card-centered h1 {
+  margin-top: 8px;
+}
+
+.button-hero {
+  min-height: 48px;
+}
+
+.button-primary.button-hero {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.button-secondary.button-hero {
+  padding-left: 22px;
+  padding-right: 22px;
 }
 
 .intro-strip p,
@@ -726,12 +779,14 @@ mark {
 
   .page-layout {
     grid-template-columns: 1fr;
+    gap: 14px;
   }
 
   .side-rail {
     position: static;
     grid-template-columns: repeat(5, minmax(0, 1fr));
     gap: 8px;
+    opacity: 1;
   }
 
   .intro-strip,
