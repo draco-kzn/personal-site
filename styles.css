@@ -370,6 +370,70 @@ mark {
   background: rgba(255, 255, 255, 0.68);
 }
 
+.profile-links-card {
+  padding: 16px 18px;
+  margin-bottom: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.profile-links {
+  display: grid;
+  gap: 12px;
+}
+
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text);
+  background: #fff;
+  transition: transform 160ms ease, border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.profile-link:hover {
+  transform: translateY(-1px);
+  border-color: var(--brand);
+  box-shadow: var(--shadow);
+}
+
+.profile-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: var(--brand-soft);
+  color: var(--brand);
+  flex: 0 0 40px;
+}
+
+.profile-logo svg {
+  width: 20px;
+  height: 20px;
+}
+
+.profile-meta {
+  display: grid;
+  gap: 2px;
+}
+
+.profile-meta strong {
+  font-size: 0.98rem;
+}
+
+.profile-meta small {
+  color: var(--muted-soft);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
 .resume-panel a,
 .contact-item a {
   color: var(--brand);

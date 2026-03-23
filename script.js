@@ -72,6 +72,20 @@ const profile = {
   resumeUrl: "./resume.pdf",
   target: "AI VC / 互联网 AI 战略 / 咨询",
   education: "对外经贸本科，即将入读复旦大学管理学院 DDIM 项目",
+  profiles: [
+    {
+      platform: "GitHub",
+      name: "draco-kzn",
+      url: "https://github.com/draco-kzn",
+      logo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5a12 12 0 0 0-3.79 23.39c.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.42-4.04-1.42-.55-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.23 1.84 1.23 1.07 1.82 2.8 1.3 3.48 1 .11-.77.42-1.3.76-1.6-2.67-.3-5.48-1.33-5.48-5.92 0-1.31.47-2.38 1.23-3.22-.12-.3-.53-1.52.12-3.16 0 0 1.01-.32 3.3 1.23a11.45 11.45 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.65 1.64.24 2.86.12 3.16.76.84 1.22 1.91 1.22 3.22 0 4.6-2.81 5.61-5.49 5.91.43.37.82 1.1.82 2.23v3.3c0 .32.21.7.83.58A12 12 0 0 0 12 .5Z"/></svg>`
+    },
+    {
+      platform: "LinkedIn",
+      name: "Zeyu He",
+      url: "https://www.linkedin.com/in/zeyu-he-468487251/",
+      logo: `<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.49 6S0 4.88 0 3.5 1.11 1 2.49 1s2.49 1.12 2.49 2.5ZM.5 8h4V23h-4V8Zm7 0h3.83v2.05h.05c.53-1 1.84-2.05 3.79-2.05 4.05 0 4.8 2.66 4.8 6.12V23h-4v-7.88c0-1.88-.03-4.29-2.61-4.29-2.61 0-3.01 2.04-3.01 4.15V23h-4V8Z"/></svg>`
+    }
+  ]
 };
 
 function setText(id, value) {
@@ -105,6 +119,24 @@ function renderBulletList(id, items) {
     .join("");
 }
 
+function renderProfileLinks(id, items) {
+  const node = document.getElementById(id);
+  if (!node) return;
+  node.innerHTML = items
+    .map(
+      (item) => `
+        <a class="profile-link reveal" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.platform}: ${item.name}">
+          <span class="profile-logo">${item.logo}</span>
+          <span class="profile-meta">
+            <strong>${item.name}</strong>
+            <small>${item.platform}</small>
+          </span>
+        </a>
+      `
+    )
+    .join("");
+}
+
 function init() {
   document.title = "何泽宇 | Concise Cover Letter";
   setText("opening-line", profile.openingLine);
@@ -129,6 +161,7 @@ function init() {
   renderBulletList("values-list", profile.values);
   renderBulletList("results-list", profile.results);
   renderBulletList("fit-list", profile.fit);
+  renderProfileLinks("profile-links", profile.profiles);
 }
 
 init();
