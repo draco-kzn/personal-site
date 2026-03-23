@@ -138,12 +138,86 @@ body::before {
 
 .hero-visual {
   display: grid;
+  width: min(860px, 100%);
   height: 300px;
-  margin-bottom: 18px;
+  margin: 0 auto 18px;
   overflow: hidden;
   border: 1px solid var(--line);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow);
+}
+
+.hero-card-centered {
+  width: min(860px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 34px;
+  padding-right: 34px;
+}
+
+.transition-copy,
+.quote-card,
+.closing-copy,
+.contact-card,
+.value-box,
+.two-column-grid,
+.intro-strip {
+  width: min(860px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.two-column-grid {
+  margin-bottom: 18px;
+}
+
+.contact-card,
+.value-box,
+.intro-strip,
+.quote-card {
+  margin-bottom: 18px;
+}
+
+.closing-copy {
+  margin-bottom: 18px;
+}
+
+.transition-copy {
+  margin: 18px auto;
+}
+
+.hero-card-centered h1,
+.hero-card-centered .hero-subtitle,
+.hero-card-centered .identity-text,
+.hero-card-centered .hero-actions,
+.hero-card-centered .hero-badges {
+  max-width: 720px;
+}
+
+.hero-card-centered .hero-actions,
+.hero-card-centered .hero-badges {
+  display: flex;
+}
+
+@media (max-width: 900px) {
+  .hero-visual,
+  .hero-card-centered,
+  .transition-copy,
+  .quote-card,
+  .closing-copy,
+  .contact-card,
+  .value-box,
+  .two-column-grid,
+  .intro-strip {
+    width: 100%;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-card-centered {
+    padding-left: 22px;
+    padding-right: 22px;
+  }
 }
 
 .hero-visual-single {
