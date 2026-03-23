@@ -126,11 +126,13 @@ function renderProfileLinks(id, items) {
     .map(
       (item) => `
         <a class="profile-link reveal" href="${item.url}" target="_blank" rel="noreferrer" aria-label="${item.platform}: ${item.name}">
+          <span class="profile-link-glow" aria-hidden="true"></span>
           <span class="profile-logo">${item.logo}</span>
           <span class="profile-meta">
-            <strong>${item.name}</strong>
             <small>${item.platform}</small>
+            <strong>${item.name}</strong>
           </span>
+          <span class="profile-arrow" aria-hidden="true">↗</span>
         </a>
       `
     )
