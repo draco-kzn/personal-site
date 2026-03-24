@@ -249,7 +249,7 @@ body::before {
 }
 
 .hero-card-centered h1 {
-  max-width: 15ch;
+  max-width: 100%;
 }
 
 .hero-card-centered .hero-subtitle,
@@ -397,7 +397,8 @@ body::before {
 }
 
 .hero-card h1 {
-  max-width: 12ch;
+  max-width: 100%;
+  white-space: nowrap;
 }
 
 .identity-text {
